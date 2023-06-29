@@ -15,11 +15,13 @@ class CategoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_category)
 
+        //show product related to categories
         getProducts(intent.getStringExtra("cat"))
     }
 
     private fun getProducts(category:String?){
         val list = ArrayList<AddProductModel>()
+        //match category with product category
         Firebase.firestore.collection("products").whereEqualTo("productCategory",category)
             .get().addOnSuccessListener {
                 list.clear()

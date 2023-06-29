@@ -44,7 +44,7 @@
         android:id="@+id/addToCartBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Add To Cart"
+        android:text="@string/add_to_cart"
         android:padding="18dp"
         android:background="@color/colorSecondary"
         android:textColor="#FF0088"

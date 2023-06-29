@@ -31,7 +31,8 @@ class ProductAdapter(val context:Context, val list:ArrayList<AddProductModel>) :
         holder.binding.textView2.text = data.productMrp
         holder.binding.textView3.text = data.productCategory
 
-        holder.binding.button.text = data.productSp
+        holder.binding.button.text = "Rs. ${data.productSp}"
+        holder.binding.button2.text = "Add to Cart"
 
         holder.itemView.setOnClickListener {
             val intent = Intent(context, ProductDetailsActivity::class.java)

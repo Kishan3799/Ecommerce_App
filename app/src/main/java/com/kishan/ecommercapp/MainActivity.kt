@@ -31,20 +31,13 @@ class MainActivity : AppCompatActivity() {
         popupMenu.inflate(R.menu.bottom_nav_menu)
         binding.bottomBarMenu.setupWithNavController(popupMenu.menu, navController)
 
-        navController.addOnDestinationChangedListener(object : NavController.OnDestinationChangedListener{
-            override fun onDestinationChanged(
-                controller: NavController,
-                destination: NavDestination,
-                arguments: Bundle?,
-            ) {
-                title = when(destination.id){
-                    R.id.cartFragment -> "Cart"
-                    R.id.profileFragment -> "Profile"
-                    else -> "Ecommerce App"
-                }
+        navController.addOnDestinationChangedListener { controller, destination, arguments ->
+            title = when (destination.id) {
+                R.id.cartFragment -> "Cart"
+                R.id.profileFragment -> "Profile"
+                else -> "Ecommerce App"
             }
-
-        })
+        }
 
         binding.bottomBarMenu.onItemSelected = {
             when(it){

@@ -28,7 +28,7 @@
                         android:layout_height="match_parent"
                         tools:srcCompat="@tools:sample/backgrounds/scenic"
                         android:scaleType="centerCrop"
-                        android:contentDescription="null"/>
+                        android:contentDescription="@null"/>
                 </com.google.android.material.card.MaterialCardView>
 
     <RelativeLayout
@@ -40,7 +40,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Shop By Category"
+            android:text="@string/shop_by_category"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
@@ -48,7 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="See All"
+            android:text="@string/see_all"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
@@ -75,7 +75,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Shop By Product"
+            android:text="@string/shop_by_product"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
@@ -83,7 +83,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="See All"
+            android:text="@string/see_all"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
