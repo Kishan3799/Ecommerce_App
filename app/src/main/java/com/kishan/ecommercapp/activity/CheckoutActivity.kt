@@ -1,6 +1,7 @@
 package com.kishan.ecommercapp.activity
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -24,7 +25,7 @@ class CheckoutActivity : AppCompatActivity(), PaymentResultListener {
 
         Checkout.preload(applicationContext)
         val co = Checkout()
-        co.setKeyID("rzp_test_MKHvf5IQ6JHRu4")
+        co.setKeyID("Set Your Api Key Here")
 
         val price = intent.getStringExtra("totalCost")
 
